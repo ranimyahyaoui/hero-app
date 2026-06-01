@@ -1,0 +1,30 @@
+<h1 class="page-title">Hero App List</h1>
+
+<div class="cards-grid">
+
+    <div class="hero-card" *ngFor="let item of heros">
+      <img [src]="item.img" [alt]="item.title" />
+
+      <div class="hero-card-body">
+        <p class="hero-card-name">{{ item.title || 'no name' }}</p>
+
+        <p class="hero-card-power">
+          Power: {{ item.power ?? 0 }}
+        </p>
+
+        <div class="hero-card-footer">
+          <div class="hero-card-actions">
+            <button class="btn-edit" title="Modifier" [routerLink]="['/update', item._id]">
+              <img src="assets/edit.png" />
+            </button>
+
+            <button class="btn-delete" (click)="deleteHero(item._id)" title="Supprimer">
+              <img src="assets/delete.jpg" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+</div>

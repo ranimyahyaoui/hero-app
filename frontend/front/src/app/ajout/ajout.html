@@ -1,0 +1,28 @@
+<h1 class="page-title">Hero App Ajout</h1>
+
+<div class="form-section">
+  <div class="form-row">
+
+    <input
+      type="text"
+      class="form-input"
+      placeholder="name"
+      [(ngModel)]="luffy.title"
+    />
+
+    <input
+      type="text"
+      class="form-input"
+      placeholder="power"
+      [(ngModel)]="luffy.power"
+    />
+
+
+    <input type="text" class="form-input" placeholder="ImageUrl" [(ngModel)]="luffy.img" />
+
+
+    <button class="btn-save" type="button" (click)="ajout()">Save</button>
+
+  </div>
+
+</div>

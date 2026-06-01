@@ -1,0 +1,33 @@
+<h1 class="page-title">Hero App Update</h1>
+
+<div class="form-section" >
+  <div class="form-row">
+
+    <input
+      type="text"
+      class="form-input"
+      placeholder="name"
+      name="title"
+      [(ngModel)]="luffy.title"
+    />
+
+    <input
+      type="text"
+      class="form-input"
+      placeholder="power"
+      name="power"
+      [(ngModel)]="luffy.power"
+    />
+
+    <input
+      type="text"
+      class="form-input"
+      placeholder="Image URL"
+      name="img"
+      [(ngModel)]="luffy.img"
+    />
+
+    <button class="btn-save" (click)="save()" type="button">update</button>
+
+  </div>
+</div>
